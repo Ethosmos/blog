@@ -14,7 +14,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pygments.rb', '~> 0.6.0'
 gem 'redcarpet', '~> 3.2.2'
 
-
+group :development, :test do
+  gem 'byebug'
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
+end
 
 group :development do
   gem 'sqlite3'
